@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subject Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #cfecf7; /* Light Blue */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Full height of the viewport */
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .sidebar {
+      width: 100px;
+      height: 100vh;
+      background-color: #1c96c5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: fixed; /* Fixed positioning */
+      left: 0; /* Push to the left edge */
+    }
+
+    .sidebar img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 20px; /* Add space between icons */
+    }
+
+    .card {
+      background-color: #fff; /* White */
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .card .icon img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    .chemistry .icon {
+      background-color: #ffeaea; /* Light Red */
+      color: #ff6b6b; /* Red */
+    }
+
+    .math .icon {
+      background-color: #e9e9ff; /* Light Purple */
+      color: #6b6bff; /* Purple */
+    }
+
+    .astronomy .icon {
+      background-color: #e9ffe9; /* Light Green */
+      color: #6bff6b; /* Green */
+    }
+
+    .physics .icon {
+      background-color: #ffe9e9; /* Light Red */
+      color: #ff6b6b; /* Red */
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    button {
+      background-color: #62c1e5; /* Blue */
+      color: #fff; /* White */
+      border: none;
+      border-radius: 4px;
+      padding: 8px 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #20a7db; /* Darker Blue */
+    }
+
+    /* Styling for Notes section */
+    .notes {
+      background-color: #a0d9ef; /* Light Blue */
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .notes h1 {
+      color: #1c96c5; /* Darker Blue */
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Notes</h1>
+    
+  <div class="sidebar">
+    <img src="/assets/Screenshot 2024-04-18 153940.png" alt="Chemistry Icon">
+    <img src="/assets/Screenshot 2024-04-18 154014.png" alt="Math Icon">
+    <img src="/assets/Screenshot 2024-04-18 160643.png" alt="Astronomy Icon">
+    <img src="/assets/Screenshot 2024-04-18 161701.png" alt="Physics Icon">
+  </div>
+
+  <div class="container">
+    <div class="card chemistry">
+      <div class="icon">
+        <!-- Chemistry Icon Placeholder -->
+        <img src="/assets/Screenshot 2024-04-18 153940.png" alt="Chemistry Icon">
+      </div>
+      <h3>Science</h3>
+      <p>Unraveling the mysteries of the universe, where curiosity meets discovery, and hypotheses spark revolutions.</p>
+      <button onclick="window.location.href='https://test.cdsjourney.com/download-content/cds-notes/'">Get Started</button>
+    </div>
+
+    <div class="card math">
+      <div class="icon">
+        <!-- Math Icon Placeholder -->
+        <img src="/assets/Screenshot 2024-04-18 154014.png" alt="Math Icon">
+      </div>
+      <h3>History</h3>
+      <p>Echoes of the past, shaping the present, and illuminating the path to our collective future</p>
+      <button onclick="window.location.href='https://test.cdsjourney.com/download-content/cds-notes/'">Get Started</button>
+    </div>
+
+    <div class="card astronomy">
+      <div class="icon">
+        <!-- Astronomy Icon Placeholder -->
+        <img src="/assets/Screenshot 2024-04-18 160643.png" alt="Astronomy Icon">
+      </div>
+      <h3>Reasoning</h3>
+      <p>Echoes of the past, shaping the present, and illuminating the path to our collective future</p>
+      <button onclick="window.location.href='https://test.cdsjourney.com/download-content/cds-notes/'">Get Started</button>
+    </div>
+
+    <div class="card physics">
+      <div class="icon">
+        <!-- Physics Icon Placeholder -->
+        <img src="/assets/Screenshot 2024-04-18 161701.png" alt="Physics Icon">
+      </div>
+      <h3>Geography</h3>
+      <p>Echoes of the past, shaping the present, and illuminating the path to our collective future</p>
+      <button onclick="window.location.href='https://test.cdsjourney.com/download-content/cds-notes/'">Get Started</button>
+
+    </div>
+  </div>
+
+  <!-- Notes Section -->
+  <!-- <div class="notes">
+    <
+  </div> -->
+
+</body>
+</html>

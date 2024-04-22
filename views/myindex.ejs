@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #795695; /* Dark purple */
+        }
+
+        header {
+            background-color: #371F76; /* Dark indigo */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            background-color: #C8A4D4; /* Light lavender */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 40px;
+            background-color: #AC94F4; /* Light purple */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio {
+            background-color: #643B9F; /* Dark purple */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .feature {
+            text-align: center;
+        }
+
+        .feature .icon-placeholder {
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .portfolio h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px; /* Add some margin between rows */
+        }
+
+        .portfolio-item {
+            text-align: center;
+            margin-bottom: 20px;
+            width: 30%; /* Adjust width to fit three items in a row */
+            max-width: 300px; /* Set maximum width for consistency */
+        }
+
+        .portfolio-item img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        /* Styles for the new divs */
+        .education-background,
+        .contact-us {
+            background-color: #AC94F4; /* Light purple */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .education-background h2,
+        .contact-us h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Styles for the contact form */
+        .contact-us form {
+            text-align: center;
+        }
+
+        .contact-us input[type="text"],
+        .contact-us input[type="email"],
+        .contact-us textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+
+        .contact-us button[type="submit"] {
+            background-color: #371F76;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-us button[type="submit"]:hover {
+            background-color: #5a3ea0;
+        }
+
+        .education-background {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-column, .right-column {
+    width: 48%; /* Adjust as needed */
+}
+
+.heading-section h3 {
+    font-size: 20px;
+    color: blue; /* Adjust as needed */
+    margin-bottom: 5px;
+}
+
+.heading-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.heading-section ul li {
+    margin-bottom: 5px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Portfolio</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="hero-text" style="margin-left: 20px; display: flex; flex-direction: column; align-items: center;">
+                <h2 style="text-align: right;">Hello, I'm Ashish Singh</h2>
+                <p style="text-align: right;">Btech'26 Lovely Professional University</p>
+                <p style="text-align: right;">Full-Stack WebDeveloper</p>
+                <button style="background-color: #371F76; color: #fff; border: none; padding: 10px 20px; border-radius: 5px;">
+                    <a href="https://www.linkedin.com/in/ashish-singh-281807252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="text-decoration: none; color: inherit;">
+                        Hire Me
+                    </a>
+                </button>
+                
+            </div>
+            <div class="hero-image">
+                <img src="/assets/IMG-20230818-WA0005.jpg" alt="Profile Picture">
+            </div>
+        </div>
+
+        <div class="education-background">
+            <center><h2 class="heading">EDUCATIONAL BACKGROUND</h2></center>
+        
+            <div class="left-column">
+                <div class="heading-section">
+                    <h3>High School</h3>
+                    <ul>
+                        <li>Year: 2019-2020</li>
+                        <li>School: Army Public School, Kamptee (Nagpur)</li>
+                        <li>Marks: 93% (A+ Grade)</li>
+                    </ul>
+                </div>
+        
+                <div class="heading-section">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Year: 2021-2022</li>
+                        <li>Science (P,C,M)</li>
+                        <li>School: Army Public School, Jalandhar Cantt</li>
+                        <li>Marks: 88% (A Grade)</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="right-column">
+                <div class="heading-section">
+                    <h3>Graduation</h3>
+                    <ul>
+                        <li>Year: 2022-2026</li>
+                        <li>Computer Science and Engineering</li>
+                        <li>Lovely Professional University</li>
+                        <li>Minor: Full-Stack WebDevelopment</li>
+                    </ul>
+                </div>
+        
+                <div class="heading-section">
+                    <h3>Co-curricular Activites / Position of Responsibility</h3>
+                    <ul>
+                        <li>NCC "C" Certificate Holder</li>
+                        <li>Basket-Ball player (Champions(Punjab-Cluster)2021-2022) </li>
+                        <li>Athlete 400 m </li>
+                        <li>Oasis Club Member (LPU)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="features">
+            <div class="feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M9 20h6v2H9zm7.906-6.288C17.936 12.506 19 11.259 19 9c0-3.859-3.141-7-7-7S5 5.141 5 9c0 2.285 1.067 3.528 2.101 4.73.358.418.729.851 1.084 1.349.144.206.38.996.591 1.921h-.792v2h8.032v-2h-.79c.213-.927.45-1.719.593-1.925.352-.503.726-.94 1.087-1.363z"></path></svg>
+                <h3>User Perfect</h3>
+                <p>
+                    "Imperfection is beauty, madness is genius, and it's better to be absolutely ridiculous than absolutely boring." </p>
+            </div>
+            <div class="feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M8 12.052c1.995 0 3.5-1.505 3.5-3.5s-1.505-3.5-3.5-3.5-3.5 1.505-3.5 3.5 1.505 3.5 3.5 3.5zM9 13H7c-2.757 0-5 2.243-5 5v1h12v-1c0-2.757-2.243-5-5-5zm11.294-4.708-4.3 4.292-1.292-1.292-1.414 1.414 2.706 2.704 5.712-5.702z"></path></svg>
+                <h3>High Quality</h3>
+                <p>"Quality is never an accident; it is always the result of high intention, sincere effort, intelligent direction, and skillful execution."</p>
+            </div>
+            <div class="feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M3.299 17.596c.432 1.332 1.745 2.182 3.146 2.182H6.5A2.78 2.78 0 0 0 9.223 22c.457 0 .884-.115 1.262-.313a.992.992 0 0 0 .515-.882V3.027a.997.997 0 0 0-.785-.983 2.324 2.324 0 0 0-1.479.201c-.744.356-1.18 1.151-1.18 1.978v.055a2.778 2.778 0 0 0-2.744 4.433A3.327 3.327 0 0 0 2 12c0 1.178.611 2.211 1.533 2.812-.43.771-.571 1.746-.234 2.784zm15.889-8.885a2.778 2.778 0 0 0-2.744-4.433v-.055c0-.826-.437-1.622-1.181-1.978a2.32 2.32 0 0 0-1.478-.201.998.998 0 0 0-.785.983v17.777c0 .365.192.712.516.882.378.199.804.314 1.261.314a2.78 2.78 0 0 0 2.723-2.223h.056c1.4 0 2.714-.85 3.146-2.182.337-1.038.196-2.013-.234-2.784A3.35 3.35 0 0 0 22 12a3.327 3.327 0 0 0-2.812-3.289z"></path></svg>
+                <h3>Awesome Mind</h3>
+                <p>
+                    "An awesome mind is not bound by limits; it dares to explore the depths of imagination and venture into the realms of the extraordinary."</p>
+            </div>
+        </div>
+        <div class="portfolio">
+            <h2>I Can Design Anything You Want</h2>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="/assets/Screenshot 2024-03-27 145551.png" alt="Showcase Image">
+                    <h3>Portfolio Item 1</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="/assets/Screenshot 2024-03-27 100656.png" alt="Portfolio Item 1">
+                    <h3>Portfolio Item 2</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="/assets/Screenshot 2024-03-27 100812.png" alt="Portfolio Item 2">
+                    <h3>Portfolio Item 3</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="/assets/Screenshot 2024-03-27 184810.png" alt="Portfolio Item 3">
+                    <h3>Portfolio Item 4</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="/assets/Screenshot 2024-02-25 181744.png" alt="Portfolio Item 4">
+                    <h3>Portfolio Item 5</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="/assets/Screenshot 2024-01-23 103918.png" alt="Portfolio Item 5">
+                    <h3>Portfolio Item 6</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+                <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+                <textarea id="requirements" name="requirements" rows="4" placeholder="Your Requirements"></textarea><br><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        
+    </main>
+
+    <script>
+        // JavaScript code (if needed)
+    </script>
+</body>
+</html>

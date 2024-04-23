@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+      /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFEAE3;
+  color: #121481;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+h1 {
+  background-color: #121481;
+  color: #FFEAE3;
+  padding: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Input Styles */
+#taskInput {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #121481;
+  border-radius: 0;
+  margin-top: 20px;
+  background-color: transparent;
+  color: #121481;
+}
+
+#addTask {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #121481;
+  color: #FFEAE3;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#addTask:hover {
+  background-color: #0f0f6c;
+}
+
+/* Task List Styles */
+#taskList {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px;
+}
+
+#taskList li {
+  background-color: #FFCBCB;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: #121481;
+}
+
+.deleteTask {
+  background-color: #FFB1B1;
+  color: #121481;
+  border: none;
+  border-radius: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.deleteTask:hover {
+  background-color: #ff9999;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+    </style>
+</head>
+<body>
+
+    <h1>To-Do List</h1>
+    
+    <input type="text" id="taskInput" placeholder="Enter task...">
+    <button id="addTask">Add Task</button>
+
+    <ul id="taskList">
+        <!-- Tasks will be added here -->
+    </ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Add Task button click event
+            $("#addTask").click(function(){
+                var task = $("#taskInput").val().trim();
+                if (task !== "") {
+                    $("#taskList").append("<li>" + task + "<button class='deleteTask'>Delete</button></li>");
+                    $("#taskInput").val(""); // Clear the input field
+                }
+            });
+
+            // Task click event (mark as completed)
+            $(document).on("click", "#taskList li", function(){
+                $(this).toggleClass("completed");
+            });
+
+            // Delete Task button click event
+            $(document).on("click", ".deleteTask", function(){
+                $(this).parent().remove(); // Remove the parent <li> element
+            });
+        });
+    </script>
+
+</body>
+</html>
